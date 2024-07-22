@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "${description}",
+	"authors": [
+		"${author}"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/basicservermodlists/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.troiryan.modverify.fabric.BasicServerModListsClient"
+		],
+		"server": [
+			"com.troiryan.modverify.fabric.BasicServerModListsServer"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
